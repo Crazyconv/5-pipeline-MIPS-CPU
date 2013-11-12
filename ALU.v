@@ -8,10 +8,10 @@ module ALU(input [`DSIZE-1:0]A,B,
 
 integer n;
   
-always @*          // whenever the input signals change, the output changes                     
+always @*                              
 begin
   Flag = 0;
-  case(op)        //use op to select among 8 operations
+  case(op)        
     3'b000:begin  //ADD
              Out = A + B;
              if(Out==`DSIZE'd0) Flag[2]=1;
@@ -41,25 +41,6 @@ begin
      
     default:Out = `DSIZE'd0;         //default
   endcase
-  
-//	if (Out==`DSIZE'd0) begin
-//	Flag<=3'b100;
-//	end if (Out<`DSIZE'd0)
-//	begin
-//	Flag<=3'b001;
-//		if(A>`DSIZE'd0&& B>`DSIZE'd0&&Out<`DSIZE'd0) 
-//		begin
-//		Flag<=3'b011;
-//		end 
-//	end
-//	if (Out>`DSIZE'd0)
-//	begin
-//	Flag<=3'b000;
-//		if(A<`DSIZE'd0&& B<`DSIZE'd0&&Out>`DSIZE'd0) 
-//		begin
-//		Flag<=3'b010;
-//		end
-//	end
 
 end
 endmodule

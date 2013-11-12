@@ -94,3 +94,19 @@ Trace back: window name "source2" already exists in parent
     ("after" script)
   <2:D:/Modeltech_pe_edu_10.2c/tcl/tk8.5/bgerror.tcl:92: ::tkerror {window name "source2" already exists in parent}
   <1:proc:24: ::tk::dialog::error::bgerror {window name "source2" already exists in parent}
+Wed Nov 13 01:09:33 CST 2013
+Trace back: Bad sequence in.main_pane.memory.interior.cs.body.list.lwchildsite.clipper.canvas.sfchildsite.tree, aborting query. (2)
+    while executing
+"$itk_component(tree) insertquery end """
+    (object "::.main_pane.memory.interior.cs.body.list" method "::vsimwidgets::Hierarchy::requery" body line 3)
+    invoked from within
+"requery"
+    (object "::.main_pane.memory.interior.cs.body.list" method "::FlatMemlist::UpdateFlatMemList" body line 8)
+    invoked from within
+"$list UpdateFlatMemList"
+    (procedure "Memview::delayedUpdateMemoryList" line 5)
+    invoked from within
+"Memview::delayedUpdateMemoryList"
+    ("after" script)
+  <2:D:/Modeltech_pe_edu_10.2c/tcl/tk8.5/bgerror.tcl:92: ::tkerror {Bad sequence in.main_pane.memory.interior.cs.body.list.lwchildsite.clipper.canvas.sfchildsite.tree, aborting query. (2)}
+  <1:eval:1: ::tk::dialog::error::bgerror {Bad sequence in.main_pane.memory.interior.cs.body.list.lwchildsite.clipper.canvas.sfchildsite.tree, aborting query. (2)}

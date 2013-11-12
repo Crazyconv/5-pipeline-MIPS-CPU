@@ -12,11 +12,13 @@
 // instruction sequence: 0 - stall - 2 - 3 - stall - 1 - 4 - stall - stall - stall - 6 - stall - 4(not jump) - 7
 // 
 // Machine code in 16-bit Hex
-d001
-8211
+//d001
+//8211
+//8100
+//ff00
+//e200
+//0322
+//f100
+//a303
 8100
-ff00
-e200
-0322
-f100
-a303
+9102

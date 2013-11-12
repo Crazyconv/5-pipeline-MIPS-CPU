@@ -30,137 +30,136 @@ Z14 !s107 E:/code sharing/CZ3001_V3/Adder.v|
 !s85 0
 !s101 -O0
 vALU
-R12
-Z15 !s100 1PWX;eQDTUBg];FjaA;XY0
-Z16 IiL75[WQN4IERJ]U^a8I`U1
+Z15 I`W2mB5F;>oG6Y19GdgSlW1
 R3
 R4
-Z17 w1384002935
-Z18 8E:/code sharing/CZ3001_V3/ALU.v
-Z19 FE:/code sharing/CZ3001_V3/ALU.v
+Z16 w1384248447
+Z17 8E:/code sharing/CZ3001_V3/ALU.v
+Z18 FE:/code sharing/CZ3001_V3/ALU.v
 L0 3
 R8
 r1
 31
-Z20 !s90 -reportprogress|300|-work|work|E:/code sharing/CZ3001_V3/ALU.v|
+Z19 !s90 -reportprogress|300|-work|work|E:/code sharing/CZ3001_V3/ALU.v|
 R10
-Z21 n@a@l@u
-Z22 !s108 1384226489.360000
-Z23 !s107 define.v|E:/code sharing/CZ3001_V3/ALU.v|
+Z20 n@a@l@u
+Z21 !s110 1384248457
+Z22 !s100 k4Y34kU9:PIGo6``lMG0F1
+Z23 !s108 1384248457.562000
+Z24 !s107 define.v|E:/code sharing/CZ3001_V3/ALU.v|
 !i10b 1
 !s85 0
 !s101 -O0
 vBr_hzUnit
 R12
-Z24 !s100 2lklMNj@g53>8SklM0e5X3
-Z25 I1W5K4?njVk?5znmJDS6VL3
+Z25 !s100 2lklMNj@g53>8SklM0e5X3
+Z26 I1W5K4?njVk?5znmJDS6VL3
 R3
 R4
-Z26 w1384138395
-Z27 8E:/code sharing/CZ3001_V3/Br_hzUnit.v
-Z28 FE:/code sharing/CZ3001_V3/Br_hzUnit.v
+Z27 w1384138395
+Z28 8E:/code sharing/CZ3001_V3/Br_hzUnit.v
+Z29 FE:/code sharing/CZ3001_V3/Br_hzUnit.v
 L0 1
 R8
 r1
 31
-Z29 !s90 -reportprogress|300|-work|work|E:/code sharing/CZ3001_V3/Br_hzUnit.v|
+Z30 !s90 -reportprogress|300|-work|work|E:/code sharing/CZ3001_V3/Br_hzUnit.v|
 R10
-Z30 n@br_hz@unit
-Z31 !s108 1384226489.759000
-Z32 !s107 E:/code sharing/CZ3001_V3/Br_hzUnit.v|
+Z31 n@br_hz@unit
+Z32 !s108 1384226489.759000
+Z33 !s107 E:/code sharing/CZ3001_V3/Br_hzUnit.v|
 !i10b 1
 !s85 0
 !s101 -O0
 vBranchUnit
-Z33 !s100 <>1]lPMRZ6fUmIjc4l;2K3
-Z34 IW0=CmH3WHZKB_QG0<M??X0
+Z34 !s100 <>1]lPMRZ6fUmIjc4l;2K3
+Z35 IW0=CmH3WHZKB_QG0<M??X0
 R3
 R4
-Z35 w1384223218
-Z36 8E:/code sharing/CZ3001_V3/Branch.v
-Z37 FE:/code sharing/CZ3001_V3/Branch.v
+Z36 w1384223218
+Z37 8E:/code sharing/CZ3001_V3/Branch.v
+Z38 FE:/code sharing/CZ3001_V3/Branch.v
 L0 1
 R8
 r1
 31
-Z38 !s90 -reportprogress|300|-work|work|E:/code sharing/CZ3001_V3/Branch.v|
+Z39 !s90 -reportprogress|300|-work|work|E:/code sharing/CZ3001_V3/Branch.v|
 R10
-Z39 n@branch@unit
-Z40 !s110 1384226490
-Z41 !s108 1384226490.076000
-Z42 !s107 E:/code sharing/CZ3001_V3/Branch.v|
+Z40 n@branch@unit
+Z41 !s110 1384226490
+Z42 !s108 1384226490.076000
+Z43 !s107 E:/code sharing/CZ3001_V3/Branch.v|
 !i10b 1
 !s85 0
 !s101 -O0
 vConcat
-R40
-Z43 !s100 kVMBZRdV0KPeNl7<V5K@Q0
-Z44 ImkQ;51;kD1f38j8^?Z2Wk3
+R41
+Z44 !s100 kVMBZRdV0KPeNl7<V5K@Q0
+Z45 ImkQ;51;kD1f38j8^?Z2Wk3
 R3
 R4
-Z45 w1383999573
-Z46 8E:/code sharing/CZ3001_V3/Concat.v
-Z47 FE:/code sharing/CZ3001_V3/Concat.v
+Z46 w1383999573
+Z47 8E:/code sharing/CZ3001_V3/Concat.v
+Z48 FE:/code sharing/CZ3001_V3/Concat.v
 L0 1
 R8
 r1
 31
-Z48 !s90 -reportprogress|300|-work|work|E:/code sharing/CZ3001_V3/Concat.v|
+Z49 !s90 -reportprogress|300|-work|work|E:/code sharing/CZ3001_V3/Concat.v|
 R10
-Z49 n@concat
-Z50 !s108 1384226490.450000
-Z51 !s107 E:/code sharing/CZ3001_V3/Concat.v|
+Z50 n@concat
+Z51 !s108 1384226490.450000
+Z52 !s107 E:/code sharing/CZ3001_V3/Concat.v|
 !i10b 1
 !s85 0
 !s101 -O0
 vControlUnit
-R40
-Z52 !s100 2]lemd@YmS]OfH85z<kJ?0
-Z53 I[`6fW;:oPD7hJ>YznR^eo0
+R41
+Z53 !s100 2]lemd@YmS]OfH85z<kJ?0
+Z54 I[`6fW;:oPD7hJ>YznR^eo0
 R3
 R4
-Z54 w1384101341
-Z55 8E:/code sharing/CZ3001_V3/ControlUnit.v
-Z56 FE:/code sharing/CZ3001_V3/ControlUnit.v
+Z55 w1384101341
+Z56 8E:/code sharing/CZ3001_V3/ControlUnit.v
+Z57 FE:/code sharing/CZ3001_V3/ControlUnit.v
 L0 1
 R8
 r1
 31
-Z57 !s90 -reportprogress|300|-work|work|E:/code sharing/CZ3001_V3/ControlUnit.v|
+Z58 !s90 -reportprogress|300|-work|work|E:/code sharing/CZ3001_V3/ControlUnit.v|
 R10
-Z58 n@control@unit
-Z59 !s108 1384226490.856000
-Z60 !s107 E:/code sharing/CZ3001_V3/ControlUnit.v|
+Z59 n@control@unit
+Z60 !s108 1384226490.856000
+Z61 !s107 E:/code sharing/CZ3001_V3/ControlUnit.v|
 !i10b 1
 !s85 0
 !s101 -O0
 vD_memory
-Z61 I7NFaejGn81D=4Lf=4[AdR1
+Z62 I7NFaejGn81D=4Lf=4[AdR1
 R3
 R4
-Z62 w1384232251
-Z63 8E:/code sharing/CZ3001_V3/D_memory.v
-Z64 FE:/code sharing/CZ3001_V3/D_memory.v
+Z63 w1384232251
+Z64 8E:/code sharing/CZ3001_V3/D_memory.v
+Z65 FE:/code sharing/CZ3001_V3/D_memory.v
 L0 3
 R8
 r1
 31
-Z65 !s90 -reportprogress|300|-work|work|E:/code sharing/CZ3001_V3/D_memory.v|
+Z66 !s90 -reportprogress|300|-work|work|E:/code sharing/CZ3001_V3/D_memory.v|
 R10
-Z66 n@d_memory
-Z67 !s110 1384232254
+Z67 n@d_memory
+Z68 !s110 1384232254
+Z69 !s100 ]gJn>lClWXlkcUW4?<D^V2
+Z70 !s108 1384232254.141000
+Z71 !s107 define.v|E:/code sharing/CZ3001_V3/D_memory.v|
 !i10b 1
-Z68 !s100 ]gJn>lClWXlkcUW4?<D^V2
 !s85 0
-Z69 !s108 1384232254.141000
-Z70 !s107 define.v|E:/code sharing/CZ3001_V3/D_memory.v|
 !s101 -O0
 vEXMEMRegister
-Z71 !s100 U_d0YjO<dC4fP^^[HJ4dW0
-Z72 IR0>58?PY_NZ[]FDO@l?J[2
+Z72 I?dn<Y>`LP<?l_DkAHAUk<2
 R3
 R4
-Z73 w1384223040
+Z73 w1384276076
 Z74 8E:/code sharing/CZ3001_V3/EXMEMRegister.v
 Z75 FE:/code sharing/CZ3001_V3/EXMEMRegister.v
 L0 1
@@ -170,280 +169,281 @@ r1
 Z76 !s90 -reportprogress|300|-work|work|E:/code sharing/CZ3001_V3/EXMEMRegister.v|
 R10
 Z77 n@e@x@m@e@m@register
-Z78 !s110 1384226492
-Z79 !s108 1384226491.971000
-Z80 !s107 E:/code sharing/CZ3001_V3/EXMEMRegister.v|
+Z78 !s110 1384276155
+Z79 !s100 aCPGB3OzcblPYd6:`^9Iz0
+Z80 !s108 1384276155.120000
+Z81 !s107 E:/code sharing/CZ3001_V3/EXMEMRegister.v|
 !i10b 1
 !s85 0
 !s101 -O0
 vFlagRegister
-R78
-Z81 !s100 eWcJcloAOEnCMdbmGImUz0
-Z82 IRE]L5RV`SYOCX2?B0oYcL2
+Z82 !s110 1384226492
+Z83 !s100 eWcJcloAOEnCMdbmGImUz0
+Z84 IRE]L5RV`SYOCX2?B0oYcL2
 R3
 R4
-Z83 w1384063817
-Z84 8E:/code sharing/CZ3001_V3/FlagRegister.v
-Z85 FE:/code sharing/CZ3001_V3/FlagRegister.v
+Z85 w1384063817
+Z86 8E:/code sharing/CZ3001_V3/FlagRegister.v
+Z87 FE:/code sharing/CZ3001_V3/FlagRegister.v
 L0 1
 R8
 r1
 31
-Z86 !s90 -reportprogress|300|-work|work|E:/code sharing/CZ3001_V3/FlagRegister.v|
+Z88 !s90 -reportprogress|300|-work|work|E:/code sharing/CZ3001_V3/FlagRegister.v|
 R10
-Z87 n@flag@register
-Z88 !s108 1384226492.364000
-Z89 !s107 E:/code sharing/CZ3001_V3/FlagRegister.v|
+Z89 n@flag@register
+Z90 !s108 1384226492.364000
+Z91 !s107 E:/code sharing/CZ3001_V3/FlagRegister.v|
 !i10b 1
 !s85 0
 !s101 -O0
 vForwardingUnit
-R78
-Z90 !s100 6NKFM>ceXJJee;WoU?II72
-Z91 Ie<LEi>S;ob2F:M9gT5Fg11
+Z92 IR_]YW2`[Xo6=hgeDCMFLk2
 R3
 R4
-Z92 w1384086708
-Z93 8E:/code sharing/CZ3001_V3/ForwardingUnit.v
-Z94 FE:/code sharing/CZ3001_V3/ForwardingUnit.v
+Z93 w1384277621
+Z94 8E:/code sharing/CZ3001_V3/ForwardingUnit.v
+Z95 FE:/code sharing/CZ3001_V3/ForwardingUnit.v
 L0 3
 R8
 r1
 31
-Z95 !s90 -reportprogress|300|-work|work|E:/code sharing/CZ3001_V3/ForwardingUnit.v|
+Z96 !s90 -reportprogress|300|-work|work|E:/code sharing/CZ3001_V3/ForwardingUnit.v|
 R10
-Z96 n@forwarding@unit
-Z97 !s108 1384226492.762000
-Z98 !s107 define.v|E:/code sharing/CZ3001_V3/ForwardingUnit.v|
+Z97 n@forwarding@unit
+Z98 !s110 1384277628
 !i10b 1
+Z99 !s100 YU]oAX1H[j2VM1lNPE>oN2
 !s85 0
+Z100 !s108 1384277628.808000
+Z101 !s107 define.v|E:/code sharing/CZ3001_V3/ForwardingUnit.v|
 !s101 -O0
 vHazardDetectionUnit
-Z99 !s100 1GUVJ@?TT9=fE=]UMF>Rf2
-Z100 IS8U_4TLMKP5QnTU4nN^[A2
+Z102 IVhSaP4g:H_4lobh7<^D:V1
 R3
 R4
-Z101 w1384103566
-Z102 8E:/code sharing/CZ3001_V3/HazardDetectionUnit.v
-Z103 FE:/code sharing/CZ3001_V3/HazardDetectionUnit.v
-L0 1
+Z103 w1384277364
+Z104 8E:/code sharing/CZ3001_V3/HazardDetectionUnit.v
+Z105 FE:/code sharing/CZ3001_V3/HazardDetectionUnit.v
+L0 3
 R8
 r1
 31
-Z104 !s90 -reportprogress|300|-work|work|E:/code sharing/CZ3001_V3/HazardDetectionUnit.v|
+Z106 !s90 -reportprogress|300|-work|work|E:/code sharing/CZ3001_V3/HazardDetectionUnit.v|
 R10
-Z105 n@hazard@detection@unit
-Z106 !s110 1384226493
-Z107 !s108 1384226493.195000
-Z108 !s107 E:/code sharing/CZ3001_V3/HazardDetectionUnit.v|
+Z107 n@hazard@detection@unit
+Z108 !s110 1384277368
+Z109 !s100 oXWlfU@i4`MEV646kNEN40
+Z110 !s108 1384277368.071000
+Z111 !s107 E:/code sharing/CZ3001_V3/HazardDetectionUnit.v|
 !i10b 1
 !s85 0
 !s101 -O0
 vhz_fwUnit
-Z109 !s110 1384145549
-Z110 IV<zc2Xc=9iF[:QcAH@4mP1
+Z112 !s110 1384145549
+Z113 IV<zc2Xc=9iF[:QcAH@4mP1
 R3
 R4
-Z111 w1384137951
-Z112 8E:/code sharing/CZ3001_V3/JR_hz_fwUnit.v
-Z113 FE:/code sharing/CZ3001_V3/JR_hz_fwUnit.v
+Z114 w1384137951
+Z115 8E:/code sharing/CZ3001_V3/JR_hz_fwUnit.v
+Z116 FE:/code sharing/CZ3001_V3/JR_hz_fwUnit.v
 L0 3
 R8
 r1
 31
 R10
-Z114 nhz_fw@unit
-Z115 !s100 DdVHkH7o^k?>_;CSOLB2W3
-Z116 !s108 1384145549.620000
-Z117 !s107 define.v|E:/code sharing/CZ3001_V3/JR_hz_fwUnit.v|
-Z118 !s90 -reportprogress|300|-work|work|E:/code sharing/CZ3001_V3/JR_hz_fwUnit.v|
+Z117 nhz_fw@unit
+Z118 !s100 DdVHkH7o^k?>_;CSOLB2W3
+Z119 !s108 1384145549.620000
+Z120 !s107 define.v|E:/code sharing/CZ3001_V3/JR_hz_fwUnit.v|
+Z121 !s90 -reportprogress|300|-work|work|E:/code sharing/CZ3001_V3/JR_hz_fwUnit.v|
 !i10b 1
 !s85 0
 !s101 -O0
 vI_memory
-R67
-!i10b 1
-!s100 g9b3LWC2YT[Ejbh>0Hf4P3
-IzGl>00M0f_OYQ1okd`NEW3
+R68
+Z122 IzGl>00M0f_OYQ1okd`NEW3
 R3
 R4
-w1384232244
-Z119 8E:/code sharing/CZ3001_V3/I_memory.v
-Z120 FE:/code sharing/CZ3001_V3/I_memory.v
+Z123 w1384232244
+Z124 8E:/code sharing/CZ3001_V3/I_memory.v
+Z125 FE:/code sharing/CZ3001_V3/I_memory.v
 L0 3
 R8
 r1
-!s85 0
 31
-!s108 1384232254.492000
-!s107 define.v|E:/code sharing/CZ3001_V3/I_memory.v|
-Z121 !s90 -reportprogress|300|-work|work|E:/code sharing/CZ3001_V3/I_memory.v|
-!s101 -O0
+Z126 !s90 -reportprogress|300|-work|work|E:/code sharing/CZ3001_V3/I_memory.v|
 R10
-Z122 n@i_memory
+Z127 n@i_memory
+Z128 !s100 g9b3LWC2YT[Ejbh>0Hf4P3
+Z129 !s108 1384232254.492000
+Z130 !s107 define.v|E:/code sharing/CZ3001_V3/I_memory.v|
+!i10b 1
+!s85 0
+!s101 -O0
 vIDEXRegister
-Z123 IX_^zHkFIflSaR3MY:LbYJ1
+Z131 I9?NC:L[HO9_o?MXVJ3mX30
 R3
 R4
-Z124 w1384228212
-Z125 8E:/code sharing/CZ3001_V3/IDEXRegister.v
-Z126 FE:/code sharing/CZ3001_V3/IDEXRegister.v
+Z132 w1384274519
+Z133 8E:/code sharing/CZ3001_V3/IDEXRegister.v
+Z134 FE:/code sharing/CZ3001_V3/IDEXRegister.v
 L0 1
 R8
 r1
 31
-Z127 !s90 -reportprogress|300|-work|work|E:/code sharing/CZ3001_V3/IDEXRegister.v|
+Z135 !s90 -reportprogress|300|-work|work|E:/code sharing/CZ3001_V3/IDEXRegister.v|
 R10
-Z128 n@i@d@e@x@register
-Z129 !s110 1384228284
-Z130 !s100 =]XBIa:UlamC^iY0ARnXm2
-Z131 !s108 1384228284.672000
-Z132 !s107 E:/code sharing/CZ3001_V3/IDEXRegister.v|
+Z136 n@i@d@e@x@register
+Z137 !s110 1384274521
+Z138 !s100 g7Ie>o>:Il8A7h8`=JQd<3
+Z139 !s108 1384274521.756000
+Z140 !s107 E:/code sharing/CZ3001_V3/IDEXRegister.v|
 !i10b 1
 !s85 0
 !s101 -O0
 vIFIDRegister
-Z133 IjTUJ6ISH2]zHM8gcgjWom2
+Z141 IjTUJ6ISH2]zHM8gcgjWom2
 R3
 R4
-Z134 w1384228046
-Z135 8E:/code sharing/CZ3001_V3/IFIDRegister.v
-Z136 FE:/code sharing/CZ3001_V3/IFIDRegister.v
+Z142 w1384228046
+Z143 8E:/code sharing/CZ3001_V3/IFIDRegister.v
+Z144 FE:/code sharing/CZ3001_V3/IFIDRegister.v
 L0 1
 R8
 r1
 31
-Z137 !s90 -reportprogress|300|-work|work|E:/code sharing/CZ3001_V3/IFIDRegister.v|
+Z145 !s90 -reportprogress|300|-work|work|E:/code sharing/CZ3001_V3/IFIDRegister.v|
 R10
-Z138 n@i@f@i@d@register
-Z139 !s110 1384228285
-Z140 !s100 5KW=WBilbg0J0557zl>]13
-Z141 !s108 1384228285.021000
-Z142 !s107 E:/code sharing/CZ3001_V3/IFIDRegister.v|
+Z146 n@i@f@i@d@register
+Z147 !s110 1384228285
+Z148 !s100 5KW=WBilbg0J0557zl>]13
+Z149 !s108 1384228285.021000
+Z150 !s107 E:/code sharing/CZ3001_V3/IFIDRegister.v|
 !i10b 1
 !s85 0
 !s101 -O0
 vJR_hz_fwUnit
-Z143 !s110 1384226494
-Z144 IDK:Fe1E?F<d]>=VSjiz<50
+Z151 !s110 1384226494
+Z152 IDK:Fe1E?F<d]>=VSjiz<50
 R3
 R4
-Z145 w1384223628
-R112
-R113
+Z153 w1384223628
+R115
+R116
 L0 3
 R8
 r1
 31
-R118
+R121
 R10
-Z146 n@j@r_hz_fw@unit
-Z147 !s100 a49ezWABD:YzDOD;njgHX1
-Z148 !s108 1384226494.687000
-R117
+Z154 n@j@r_hz_fw@unit
+Z155 !s100 a49ezWABD:YzDOD;njgHX1
+Z156 !s108 1384226494.687000
+R120
 !i10b 1
 !s85 0
 !s101 -O0
 vMEMWBRegister
-Z149 I^RDbA0PhdGQJ:Bzg^=WlW1
+Z157 I^RDbA0PhdGQJ:Bzg^=WlW1
 R3
 R4
-Z150 w1384225994
-Z151 8E:/code sharing/CZ3001_V3/MEMWBRegister.v
-Z152 FE:/code sharing/CZ3001_V3/MEMWBRegister.v
+Z158 w1384225994
+Z159 8E:/code sharing/CZ3001_V3/MEMWBRegister.v
+Z160 FE:/code sharing/CZ3001_V3/MEMWBRegister.v
 L0 1
 R8
 r1
 31
-Z153 !s90 -reportprogress|300|-work|work|E:/code sharing/CZ3001_V3/MEMWBRegister.v|
+Z161 !s90 -reportprogress|300|-work|work|E:/code sharing/CZ3001_V3/MEMWBRegister.v|
 R10
-Z154 n@m@e@m@w@b@register
-Z155 !s110 1384226495
-Z156 !s100 dZ>]::NoWPI@@n^V=9BYb2
-Z157 !s108 1384226495.274000
-Z158 !s107 E:/code sharing/CZ3001_V3/MEMWBRegister.v|
+Z162 n@m@e@m@w@b@register
+Z163 !s110 1384226495
+Z164 !s100 dZ>]::NoWPI@@n^V=9BYb2
+Z165 !s108 1384226495.274000
+Z166 !s107 E:/code sharing/CZ3001_V3/MEMWBRegister.v|
 !i10b 1
 !s85 0
 !s101 -O0
 vPC
-R155
-Z159 !s100 `7d_16fSG80gNVJXCK1B42
-Z160 I[54S@Q:a8gdh1Yj?bc?Fe2
+R163
+Z167 !s100 `7d_16fSG80gNVJXCK1B42
+Z168 I[54S@Q:a8gdh1Yj?bc?Fe2
 R3
 R4
-Z161 w1384063884
-Z162 8E:/code sharing/CZ3001_V3/PC.v
-Z163 FE:/code sharing/CZ3001_V3/PC.v
+Z169 w1384063884
+Z170 8E:/code sharing/CZ3001_V3/PC.v
+Z171 FE:/code sharing/CZ3001_V3/PC.v
 L0 1
 R8
 r1
 31
-Z164 !s90 -reportprogress|300|-work|work|E:/code sharing/CZ3001_V3/PC.v|
+Z172 !s90 -reportprogress|300|-work|work|E:/code sharing/CZ3001_V3/PC.v|
 R10
 n@p@c
-Z165 !s108 1384226495.663000
-Z166 !s107 E:/code sharing/CZ3001_V3/PC.v|
+Z173 !s108 1384226495.663000
+Z174 !s107 E:/code sharing/CZ3001_V3/PC.v|
 !i10b 1
 !s85 0
 !s101 -O0
 vReg_File
-Z167 !s100 ih1m>L7QUJ[MPa@YHKJ_A3
-Z168 I]fRSeAz`hW:;Z`N:FHO1_0
+Z175 !s100 ih1m>L7QUJ[MPa@YHKJ_A3
+Z176 I]fRSeAz`hW:;Z`N:FHO1_0
 R3
 R4
-Z169 w1384070474
-Z170 8E:/code sharing/CZ3001_V3/RF.v
-Z171 FE:/code sharing/CZ3001_V3/RF.v
+Z177 w1384070474
+Z178 8E:/code sharing/CZ3001_V3/RF.v
+Z179 FE:/code sharing/CZ3001_V3/RF.v
 L0 1
 R8
 r1
 31
-Z172 !s90 -reportprogress|300|-work|work|E:/code sharing/CZ3001_V3/RF.v|
+Z180 !s90 -reportprogress|300|-work|work|E:/code sharing/CZ3001_V3/RF.v|
 R10
-Z173 n@reg_@file
-Z174 !s110 1384226496
-Z175 !s108 1384226496.047000
-Z176 !s107 E:/code sharing/CZ3001_V3/RF.v|
+Z181 n@reg_@file
+Z182 !s110 1384226496
+Z183 !s108 1384226496.047000
+Z184 !s107 E:/code sharing/CZ3001_V3/RF.v|
 !i10b 1
 !s85 0
 !s101 -O0
 vtop
-R139
-Z177 IFgdTgIUM?T2;4eIZmj`CZ3
+!s110 1384277868
+!i10b 1
+!s100 cbMk=If][n^gl]i?D;d_B0
+IE_8I=mlzI_5_74J7B=PAM2
 R3
 R4
-Z178 w1384228260
-Z179 8E:/code sharing/CZ3001_V3/top.v
-Z180 FE:/code sharing/CZ3001_V3/top.v
+w1384277849
+Z185 8E:/code sharing/CZ3001_V3/top.v
+Z186 FE:/code sharing/CZ3001_V3/top.v
 L0 3
 R8
 r1
-31
-Z181 !s90 -reportprogress|300|-work|work|E:/code sharing/CZ3001_V3/top.v|
-R10
-Z182 !s100 baVEjoZQWDXZRcWddTAz31
-Z183 !s108 1384228285.418000
-Z184 !s107 define.v|E:/code sharing/CZ3001_V3/top.v|
-!i10b 1
 !s85 0
+31
+!s108 1384277868.460000
+!s107 define.v|E:/code sharing/CZ3001_V3/top.v|
+Z187 !s90 -reportprogress|300|-work|work|E:/code sharing/CZ3001_V3/top.v|
 !s101 -O0
+R10
 vtop_tb_file_io
-Z185 !s100 nlPQm3F9z7EV0QXTc[^^20
-Z186 I=7cR0[nmA]RdfFN[30PNG0
+Z188 !s100 nlPQm3F9z7EV0QXTc[^^20
+Z189 I=7cR0[nmA]RdfFN[30PNG0
 R3
 R4
-Z187 w1384068606
-Z188 8E:/code sharing/CZ3001_V3/top_tb.v
-Z189 FE:/code sharing/CZ3001_V3/top_tb.v
+Z190 w1384068606
+Z191 8E:/code sharing/CZ3001_V3/top_tb.v
+Z192 FE:/code sharing/CZ3001_V3/top_tb.v
 L0 1
 R8
 r1
 31
-Z190 !s90 -reportprogress|300|-work|work|E:/code sharing/CZ3001_V3/top_tb.v|
+Z193 !s90 -reportprogress|300|-work|work|E:/code sharing/CZ3001_V3/top_tb.v|
 R10
-Z191 !s110 1384226488
-Z192 !s108 1384226488.550000
-Z193 !s107 E:/code sharing/CZ3001_V3/top_tb.v|
+Z194 !s110 1384226488
+Z195 !s108 1384226488.550000
+Z196 !s107 E:/code sharing/CZ3001_V3/top_tb.v|
 !i10b 1
 !s85 0
 !s101 -O0

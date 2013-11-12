@@ -40,7 +40,7 @@ wire [`RSIZE-1:0]ID_WAddr;
 
 wire [`MEM_SPACE-1:0]EX_PCnext;   
 wire [`DSIZE-1:0]EX_RData1,EX_RData2;   
-wire [3:0]EX_imm; 
+wire [3:0]EX_imm, EX_opCode;
 wire [7:0]EX_immed;  
 wire [`RSIZE-1:0]EX_WAddr, EX_RAddr1, EX_RAddr2;    
 wire [2:0]EX_op;   
@@ -51,6 +51,7 @@ wire MEM_EX_Fwd1;
 wire MEM_EX_Fwd2;
 wire WB_EX_Fwd1;
 wire WB_EX_Fwd2;
+wire WB_MEM_Fwd;
 
 wire [`DSIZE-1:0]A, B;   
 
@@ -66,12 +67,14 @@ wire [`MEM_SPACE-1:0]MEM_PCnext;
 wire [`DSIZE-1:0]MEM_ALUout;
 wire [`DSIZE-1:0]MEM_DWData; 
 wire [`DSIZE-1:0]MEM_immediate;
-wire [`RSIZE-1:0]MEM_WAddr;
-wire [2:0]MEM_Flag;
+wire [`RSIZE-1:0]MEM_WAddr, MEM_RAddr2;
+wire [2:0]MEM_Flag; 
+wire [3:0]MEM_opCode;
 wire [1:0]MEM_WDataSc1;
 wire MEM_DWen, MEM_RFWen, MEM_EXE, MEM_WDataSc2;                            
-wire [`DSIZE-1:0]MEM_SrcData;           //where
-wire [`DSIZE-1:0]DRData;
+wire [`DSIZE-1:0]MEM_SrcData;           
+wire [`DSIZE-1:0]DRData, DWData;
+
 wire [`RSIZE-1:0]WB_WAddr;               
 wire [`DSIZE-1:0]WB_SrcData, WB_WData;               
 wire WB_RFWen, WB_WDataSc2; 
@@ -107,6 +110,7 @@ assign B = (EX_BSc)? EX_DWData : $signed(EX_imm);
 //MEM stage
 assign MEM_SrcData = (MEM_WDataSc1==2'b10)? MEM_immediate :
                     ((MEM_WDataSc1==2'b11)? MEM_PCnext : MEM_ALUout);
+assign DWData = (WB_MEM_Fwd)? WB_WData : MEM_DWData;
 
 //WB stage
 assign WB_WData = (WB_WDataSc2)? DRData : WB_SrcData;
@@ -157,14 +161,14 @@ Adder AD_JUMP(.offset(offset), .PC(ID_PCnext),
 
 IDEXRegister IER(.clk(clk), .rst(rst), .stall(stall), .flush(flush),
                  .inPC(ID_PCnext), .inRFRData1(ID_RData1), .inRFRData2(ID_RData2),
-                 .inimm(ID_imm), .inimmed(ID_immed),
+                 .inimm(ID_imm), .inopCode(opCode), .inimmed(ID_immed),
                  .inRFWAddr(ID_WAddr), .inRFRAddr1(ID_RAddr1), .inRFRAddr2(ID_RAddr2),
                  .inALUop(ID_op), .inRFWDataSc1(ID_WDataSc1), .inRFWDataSc2(ID_WDataSc2), .inBSc(ID_BSc), .inimmedSc(ID_immedSc), 
                  .inmodify(ID_modify), .inDMWen(ID_DMWen), .inEXE(ID_EXE), .inRFWen(ID_RFWen),
                  //output
                  .postflush(postflush),
                  .outPC(EX_PCnext), .outRFRData1(EX_RData1), .outRFRData2((EX_RData2)),
-                 .outimm(EX_imm), .outimmed(EX_immed),
+                 .outimm(EX_imm), .outopCode(EX_opCode), .outimmed(EX_immed),
                  .outRFWAddr(EX_WAddr), .outRFRAddr1(EX_RAddr1), .outRFRAddr2(EX_RAddr2),
                  .outALUop(EX_op), .outRFWDataSc1(EX_WDataSc1), .outRFWDataSc2(EX_WDataSc2), .outBSc(EX_BSc), .outimmedSc(EX_immedSc),
                  .outmodify(EX_modify), .outDMWen(EX_DMWen), .outEXE(EX_EXE), .outRFWen(EX_RFWen), .poststall(poststall));
@@ -175,24 +179,26 @@ ALU alu(.A(A), .B(B), .op(EX_op), .imm(EX_imm),
 FlagRegister FR(.clk(clk), .rst(rst), .modify(EX_modify), .inFlag(inFlag), 
                 .outFlag(EX_Flag));
                 
-ForwardingUnit FU(.RAddr1(EX_RAddr1), .RAddr2(EX_RAddr2), .MEM_WAddr(MEM_WAddr), .WB_WAddr(WB_WAddr),
-                  .MEM_RFWen(MEM_RFWen), .WB_RFWen(WB_RFWen),
-                  .MEM_EX_Fwd1(MEM_EX_Fwd1), .MEM_EX_Fwd2(MEM_EX_Fwd2), .WB_EX_Fwd1(WB_EX_Fwd1), .WB_EX_Fwd2(WB_EX_Fwd2));
+ForwardingUnit FU(.RAddr1(EX_RAddr1), .RAddr2(EX_RAddr2), .MEM_RAddr2(MEM_RAddr2), .MEM_WAddr(MEM_WAddr), .WB_WAddr(WB_WAddr),
+                  .MEM_RFWen(MEM_RFWen), .WB_RFWen(WB_RFWen), .MEM_opCode(MEM_opCode),
+                  .MEM_EX_Fwd1(MEM_EX_Fwd1), .MEM_EX_Fwd2(MEM_EX_Fwd2), .WB_EX_Fwd1(WB_EX_Fwd1), .WB_EX_Fwd2(WB_EX_Fwd2), .WB_MEM_Fwd(WB_MEM_Fwd));
 
 Concat CC(.regData(EX_DWData), .immData(EX_immed), .immedSc(EX_immedSc),
        .outData(EX_immediate));
        
 EXMEMRegister EMR(.clk(clk), .rst(rst),
                   .inPC(EX_PCnext), .inALUOut(EX_ALUout), .inDWData(EX_DWData), .inimmedia(EX_immediate),
-                  .inRFWAddr(EX_WAddr), .inFlag(EX_Flag), .inRFWDataSc1(EX_WDataSc1), .inRFWDataSc2(EX_WDataSc2),
+                  .inRFWAddr(EX_WAddr), .inRAddr2(EX_RAddr2),
+                  .inFlag(EX_Flag), .inopCode(EX_opCode), .inRFWDataSc1(EX_WDataSc1), .inRFWDataSc2(EX_WDataSc2),
                   .inDMWen(EX_DMWen), .inEXE(EX_EXE), .inRFWen(EX_RFWen),
                   //output
                   .outPC(MEM_PCnext), .outALUOut(MEM_ALUout), .outDWData(MEM_DWData), .outimmedia(MEM_immediate),
-                  .outRFWAddr(MEM_WAddr), .outFlag(MEM_Flag), .outRFWDataSc1(MEM_WDataSc1), .outRFWDataSc2(MEM_WDataSc2),
+                  .outRFWAddr(MEM_WAddr), .outRAddr2(MEM_RAddr2),
+                  .outFlag(MEM_Flag), .outopCode(MEM_opCode), .outRFWDataSc1(MEM_WDataSc1), .outRFWDataSc2(MEM_WDataSc2),
                   .outDMWen(MEM_DWen), .outEXE(MEM_EXE), .outRFWen(MEM_RFWen));
 
 D_memory DM(.clk(clk), .rst(rst), .write_en(MEM_DWen),
-            .address(MEM_ALUout), .data_in(MEM_DWData),
+            .address(MEM_ALUout), .data_in(DWData),
             .data_out(DRData));
 
 MEMWBRegister MWR(.clk(clk), .rst(rst),
