@@ -1,0 +1,18 @@
+// This file is used to initialize D_memory
+//
+// brief of slots in D_memory
+// mem[0]:  address of the JR instruction 
+// mem[1]:  
+// mem[2]:  
+// mem[3]:  
+// mem[4]:  
+// mem[5]:  address of the second EXE instruction
+//
+// Data in Hex starting from mem[0]
+0004
+0000
+0000
+0000
+0000
+0006
+0000

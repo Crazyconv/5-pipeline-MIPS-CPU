@@ -54,6 +54,13 @@ Model Technology ModelSim PE Student Edition vlog 10.2c Compiler 2013.07 Jul 18 
 Top level modules:
 	Br_hzUnit
 
+} {} {}} {E:/code sharing/CZ3001_V3/IDEXRegister.v} {1 {vlog -work work {E:/code sharing/CZ3001_V3/IDEXRegister.v}
+Model Technology ModelSim PE Student Edition vlog 10.2c Compiler 2013.07 Jul 18 2013
+-- Compiling module IDEXRegister
+
+Top level modules:
+	IDEXRegister
+
 } {} {}} {E:/code sharing/CZ3001_V3/Concat.v} {1 {vlog -work work {E:/code sharing/CZ3001_V3/Concat.v}
 Model Technology ModelSim PE Student Edition vlog 10.2c Compiler 2013.07 Jul 18 2013
 -- Compiling module Concat
@@ -88,6 +95,20 @@ Model Technology ModelSim PE Student Edition vlog 10.2c Compiler 2013.07 Jul 18 
 
 Top level modules:
 	I_memory
+
+} {} {}} {E:/code sharing/CZ3001_V3/IFIDRegister.v} {1 {vlog -work work {E:/code sharing/CZ3001_V3/IFIDRegister.v}
+Model Technology ModelSim PE Student Edition vlog 10.2c Compiler 2013.07 Jul 18 2013
+-- Compiling module IFIDRegister
+
+Top level modules:
+	IFIDRegister
+
+} {} {}} {E:/code sharing/CZ3001_V3/top.v} {1 {vlog -work work {E:/code sharing/CZ3001_V3/top.v}
+Model Technology ModelSim PE Student Edition vlog 10.2c Compiler 2013.07 Jul 18 2013
+-- Compiling module top
+
+Top level modules:
+	top
 
 } {} {}} {E:/code sharing/CZ3001_V3/ForwardingUnit.v} {1 {vlog -work work {E:/code sharing/CZ3001_V3/ForwardingUnit.v}
 Model Technology ModelSim PE Student Edition vlog 10.2c Compiler 2013.07 Jul 18 2013

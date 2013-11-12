@@ -16,7 +16,7 @@ begin
   if(rst)
 	begin
 	  addr_inc = 0;
-    I_init = $fopen("I_memory_init.txt","r");
+    I_init = $fopen("I_memory.txt","r");
     while(!$feof(I_init))
       begin
         c = $fgetc(I_init);

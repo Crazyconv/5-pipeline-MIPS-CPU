@@ -1,0 +1,22 @@
+// This file is used to initialize I_memory
+// These instructions are designed for testing JAL, JR, EXEC instructions and related data hazard and control hazard
+// Assembly
+// 0: JAL   1               // jump to 2, save 1 to R15
+// 1: Lw    R2, mem[R1+1]   // load 6
+// 2: LW	R1, mem[R0+0]	// load 4 
+// 3: EXEC  15	            // jump to 1
+// 4: JR    R2	            // jump to 6
+// 5: ADD   R3, R3, R2      // this instruction will not execute
+// 6: EXEC  R1              // jump to 4
+// 7: LHB   R3, 3           // just test the LHB instruction
+// instruction sequence: 0 - stall - 2 - 3 - stall - 1 - 4 - stall - stall - stall - 6 - stall - 4(not jump) - 7
+// 
+// Machine code in 16-bit Hex
+d001
+8211
+8100
+ff00
+e200
+0322
+f100
+a303
