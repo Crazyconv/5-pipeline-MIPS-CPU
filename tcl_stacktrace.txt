@@ -1,0 +1,96 @@
+Mon Nov 11 13:16:29 CST 2013
+Trace back: window name "source2" already exists in parent
+    while executing
+"frame [GetActiveWindowFooter].$name"
+    (procedure "Console::CreateWindowFooter" line 3)
+    invoked from within
+"Console::CreateWindowFooter [$frame_name cget -windowname]"
+    (object "::.main_pane.source2" method "::mtiwidgets::WindowObj::GetClientFooter" body line 23)
+    invoked from within
+"$windowobj GetClientFooter"
+    (object "::.main_pane.source2.interior.cs.body.editor" method "::vsimwidgets::Srcedit::UpdateSourceState" body line 34)
+    invoked from within
+"UpdateSourceState"
+    (object "::.main_pane.source2.interior.cs.body.editor" method "::vsimwidgets::Srcedit::Activate" body line 3)
+    invoked from within
+"$src Activate"
+    (procedure "SrceditActivate" line 7)
+    invoked from within
+"SrceditActivate .main_pane.source2"
+    ("eval" body line 1)
+    invoked from within
+"eval $itk_option(-activatecommand) $frame_name"
+    (object "::.main_pane.source2" method "::mtiwidgets::WindowObj::Activate" body line 16)
+    invoked from within
+"$windowobj Activate """
+    (object "::.vcop" method "::vsimwidgets::Vcop::ActualActivate" body line 35)
+    invoked from within
+"::.vcop ActualActivate"
+    (in namespace inscope "::vsimwidgets::Vcop" script line 1)
+    invoked from within
+"namespace inscope ::vsimwidgets::Vcop {::.vcop ActualActivate}"
+    ("after" script)
+  <2:D:/Modeltech_pe_edu_10.2c/tcl/tk8.5/bgerror.tcl:92: ::tkerror {window name "source2" already exists in parent}
+  <1:eval:1: ::tk::dialog::error::bgerror {window name "source2" already exists in parent}
+Mon Nov 11 13:31:57 CST 2013
+Trace back: invalid command name ""
+    while executing
+"$treeView configure -sortstate $dir $col"
+    (procedure "sort" line 3)
+    invoked from within
+"sort $w $col $dir"
+    (procedure "structsort" line 9)
+    invoked from within
+"structsort .main_pane.structure 0 descending"
+    (in namespace inscope "::QStructure" script line 1)
+    invoked from within
+"namespace inscope ::QStructure {structsort .main_pane.structure} 0 descending"
+    ("eval" body line 1)
+    invoked from within
+"eval $itk_option(-sortcommand) $column $dir"
+    (object "::.main_pane.structure.interior.cs.body.struct" method "::vsimwidgets::Hierarchy::sort" body line 26)
+    invoked from within
+"sort $sortIdx $dir"
+    (object "::.main_pane.structure.interior.cs.body.struct" method "::vsimwidgets::Hierarchy::_initializeSortColumn" body line 10)
+    invoked from within
+"::.main_pane.structure.interior.cs.body.struct _initializeSortColumn"
+    (in namespace inscope "::vsimwidgets::Hierarchy" script line 1)
+    invoked from within
+"namespace inscope ::vsimwidgets::Hierarchy {::.main_pane.structure.interior.cs.body.struct _initializeSortColumn}"
+    ("after" script)
+  <2:D:/Modeltech_pe_edu_10.2c/tcl/tk8.5/bgerror.tcl:92: ::tkerror {invalid command name ""}
+  <1:eval:1: ::tk::dialog::error::bgerror {invalid command name ""}
+Mon Nov 11 13:34:35 CST 2013
+Trace back: window name "source2" already exists in parent
+    while executing
+"frame [GetActiveWindowFooter].$name"
+    (procedure "Console::CreateWindowFooter" line 3)
+    invoked from within
+"Console::CreateWindowFooter [$frame_name cget -windowname]"
+    (object "::.main_pane.source2" method "::mtiwidgets::WindowObj::GetClientFooter" body line 23)
+    invoked from within
+"$windowobj GetClientFooter"
+    (object "::.main_pane.source2.interior.cs.body.editor" method "::vsimwidgets::Srcedit::UpdateSourceState" body line 34)
+    invoked from within
+"UpdateSourceState"
+    (object "::.main_pane.source2.interior.cs.body.editor" method "::vsimwidgets::Srcedit::Activate" body line 3)
+    invoked from within
+"$src Activate"
+    (procedure "SrceditActivate" line 7)
+    invoked from within
+"SrceditActivate .main_pane.source2"
+    ("eval" body line 1)
+    invoked from within
+"eval $itk_option(-activatecommand) $frame_name"
+    (object "::.main_pane.source2" method "::mtiwidgets::WindowObj::Activate" body line 16)
+    invoked from within
+"$windowobj Activate """
+    (object "::.vcop" method "::vsimwidgets::Vcop::ActualActivate" body line 35)
+    invoked from within
+"::.vcop ActualActivate"
+    (in namespace inscope "::vsimwidgets::Vcop" script line 1)
+    invoked from within
+"namespace inscope ::vsimwidgets::Vcop {::.vcop ActualActivate}"
+    ("after" script)
+  <2:D:/Modeltech_pe_edu_10.2c/tcl/tk8.5/bgerror.tcl:92: ::tkerror {window name "source2" already exists in parent}
+  <1:proc:24: ::tk::dialog::error::bgerror {window name "source2" already exists in parent}

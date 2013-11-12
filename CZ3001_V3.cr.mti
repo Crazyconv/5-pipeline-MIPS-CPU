@@ -1,0 +1,123 @@
+{E:/code sharing/CZ3001_V3/JR_hz_fwUnit.v} {1 {vlog -work work {E:/code sharing/CZ3001_V3/JR_hz_fwUnit.v}
+Model Technology ModelSim PE Student Edition vlog 10.2c Compiler 2013.07 Jul 18 2013
+-- Compiling module JR_hz_fwUnit
+
+Top level modules:
+	JR_hz_fwUnit
+
+} {} {}} {E:/code sharing/CZ3001_V3/EXMEMRegister.v} {1 {vlog -work work {E:/code sharing/CZ3001_V3/EXMEMRegister.v}
+Model Technology ModelSim PE Student Edition vlog 10.2c Compiler 2013.07 Jul 18 2013
+-- Compiling module EXMEMRegister
+
+Top level modules:
+	EXMEMRegister
+
+} {} {}} {E:/code sharing/CZ3001_V3/HazardDetectionUnit.v} {1 {vlog -work work {E:/code sharing/CZ3001_V3/HazardDetectionUnit.v}
+Model Technology ModelSim PE Student Edition vlog 10.2c Compiler 2013.07 Jul 18 2013
+-- Compiling module HazardDetectionUnit
+
+Top level modules:
+	HazardDetectionUnit
+
+} {} {}} {E:/code sharing/CZ3001_V3/ControlUnit.v} {1 {vlog -work work {E:/code sharing/CZ3001_V3/ControlUnit.v}
+Model Technology ModelSim PE Student Edition vlog 10.2c Compiler 2013.07 Jul 18 2013
+-- Compiling module ControlUnit
+
+Top level modules:
+	ControlUnit
+
+} {} {}} {E:/code sharing/CZ3001_V3/ALU.v} {1 {vlog -work work {E:/code sharing/CZ3001_V3/ALU.v}
+Model Technology ModelSim PE Student Edition vlog 10.2c Compiler 2013.07 Jul 18 2013
+-- Compiling module ALU
+
+Top level modules:
+	ALU
+
+} {} {}} {E:/code sharing/CZ3001_V3/PC.v} {1 {vlog -work work {E:/code sharing/CZ3001_V3/PC.v}
+Model Technology ModelSim PE Student Edition vlog 10.2c Compiler 2013.07 Jul 18 2013
+-- Compiling module PC
+
+Top level modules:
+	PC
+
+} {} {}} {E:/code sharing/CZ3001_V3/MEMWBRegister.v} {1 {vlog -work work {E:/code sharing/CZ3001_V3/MEMWBRegister.v}
+Model Technology ModelSim PE Student Edition vlog 10.2c Compiler 2013.07 Jul 18 2013
+-- Compiling module MEMWBRegister
+
+Top level modules:
+	MEMWBRegister
+
+} {} {}} {E:/code sharing/CZ3001_V3/Br_hzUnit.v} {1 {vlog -work work {E:/code sharing/CZ3001_V3/Br_hzUnit.v}
+Model Technology ModelSim PE Student Edition vlog 10.2c Compiler 2013.07 Jul 18 2013
+-- Compiling module Br_hzUnit
+
+Top level modules:
+	Br_hzUnit
+
+} {} {}} {E:/code sharing/CZ3001_V3/Concat.v} {1 {vlog -work work {E:/code sharing/CZ3001_V3/Concat.v}
+Model Technology ModelSim PE Student Edition vlog 10.2c Compiler 2013.07 Jul 18 2013
+-- Compiling module Concat
+
+Top level modules:
+	Concat
+
+} {} {}} {E:/code sharing/CZ3001_V3/RF.v} {1 {vlog -work work {E:/code sharing/CZ3001_V3/RF.v}
+Model Technology ModelSim PE Student Edition vlog 10.2c Compiler 2013.07 Jul 18 2013
+-- Compiling module Reg_File
+
+Top level modules:
+	Reg_File
+
+} {} {}} {E:/code sharing/CZ3001_V3/top_tb.v} {1 {vlog -work work {E:/code sharing/CZ3001_V3/top_tb.v}
+Model Technology ModelSim PE Student Edition vlog 10.2c Compiler 2013.07 Jul 18 2013
+-- Compiling module top_tb_file_io
+
+Top level modules:
+	top_tb_file_io
+
+} {} {}} {E:/code sharing/CZ3001_V3/Adder.v} {1 {vlog -work work {E:/code sharing/CZ3001_V3/Adder.v}
+Model Technology ModelSim PE Student Edition vlog 10.2c Compiler 2013.07 Jul 18 2013
+-- Compiling module Adder
+
+Top level modules:
+	Adder
+
+} {} {}} {E:/code sharing/CZ3001_V3/I_memory.v} {1 {vlog -work work {E:/code sharing/CZ3001_V3/I_memory.v}
+Model Technology ModelSim PE Student Edition vlog 10.2c Compiler 2013.07 Jul 18 2013
+-- Compiling module I_memory
+
+Top level modules:
+	I_memory
+
+} {} {}} {E:/code sharing/CZ3001_V3/ForwardingUnit.v} {1 {vlog -work work {E:/code sharing/CZ3001_V3/ForwardingUnit.v}
+Model Technology ModelSim PE Student Edition vlog 10.2c Compiler 2013.07 Jul 18 2013
+-- Compiling module ForwardingUnit
+
+Top level modules:
+	ForwardingUnit
+
+} {} {}} {E:/code sharing/CZ3001_V3/define.v} {1 {vlog -work work {E:/code sharing/CZ3001_V3/define.v}
+Model Technology ModelSim PE Student Edition vlog 10.2c Compiler 2013.07 Jul 18 2013
+
+} {} {}} {E:/code sharing/CZ3001_V3/D_memory.v} {1 {vlog -work work {E:/code sharing/CZ3001_V3/D_memory.v}
+Model Technology ModelSim PE Student Edition vlog 10.2c Compiler 2013.07 Jul 18 2013
+-- Compiling module D_memory
+
+Top level modules:
+	D_memory
+
+} {} {}} {E:/code sharing/CZ3001_V3/Branch.v} {1 {vlog -work work {E:/code sharing/CZ3001_V3/Branch.v}
+Model Technology ModelSim PE Student Edition vlog 10.2c Compiler 2013.07 Jul 18 2013
+-- Compiling module BranchUnit
+
+Top level modules:
+	BranchUnit
+
+} {} {}} {E:/code sharing/CZ3001_V3/FlagRegister.v} {1 {vlog -work work {E:/code sharing/CZ3001_V3/FlagRegister.v}
+Model Technology ModelSim PE Student Edition vlog 10.2c Compiler 2013.07 Jul 18 2013
+-- Compiling module FlagRegister
+
+Top level modules:
+	FlagRegister
+
+} {} {}}
