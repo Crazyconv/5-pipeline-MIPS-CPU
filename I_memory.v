@@ -16,7 +16,7 @@ begin
   if(rst)
 	begin
 	  addr_inc = 0;
-    I_init = $fopen("I_memory.txt","r");
+    I_init = $fopen("I_memory_test.txt","r");
     while(!$feof(I_init))
       begin
         c = $fgetc(I_init);
@@ -32,7 +32,7 @@ begin
 		    end
 	    end
 	  $fclose(I_init);
-    for (i = addr_inc - 1; i < 2 ** `MEM_SPACE; i = i + 1)
+    for (i = addr_inc-1; i < 2 ** `MEM_SPACE; i = i + 1)
 	  begin
       memory[i] = 16'h0000;
 	  end

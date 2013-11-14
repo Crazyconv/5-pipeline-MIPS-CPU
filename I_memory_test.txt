@@ -1,0 +1,77 @@
+// This file is used to initialize I_memory
+//
+// Assembly
+// First part of the program
+// 0: LW	R4, mem[R0+4]                                          //Load
+// 1: LW	R5, mem[R0+5]
+// 2: LW	R1, mem[R0+0]	// load 0 
+// 3：LW	R2, mem[R0+1]	// load 1
+//    *Data hazard(R2), one cycle stall
+// 4：ADD	R3, R1, R2	    // additon                             //Arithmetic, MEM to ALU forwarding(WB_EX_Fwd)
+// 5：SW	R2, mem[R0+2]	// store the 2nd operand in mem[2]     //Store
+// 6：SW	R3, mem[R0+3]	// store the addition in mem[3]
+// LOOP:(The loop will be executed 3 times)
+// 7：LW	R1, mem[R0+2]	// load 1st operand
+// 8：LW	R2, mem[R0+3]	// load 2nd operand
+//    *Data hazard(R2), one cycle stall
+// 9：ADD	R3, R1, R2	    // additon                                 
+// 10:SW	R2, mem[R0+2]	// store the 2nd operand in mem[2]
+// 11:SW	R3, mem[R0+3]	// store the addition in mem[3]
+// 12:SUB	R4, R4, R5
+// 13:B	NEQ, (PC+1)+(-7)                                           //Branch
+//    *Branch_FlagRegister Hazard, one cycle stall
+//    *Control Hazard(Branch), one cycle stall, flush instruction previously fetched.
+// END OF LOOP
+//
+// Second part of the program
+// Execution sequence: 14 - 16 - 17 - 15 - 18 - 20 - (18) - 21 - 22 - 23 - 24 - 25 - 26
+// 14:JAL   1               // jump to 16, save 15 to R15          //JAL
+//    *Control Hazard(JAL), one cycle stall, flush instruction previously fetched. 
+// 15:Lw    R2, mem[R0+7]   // load 20
+//    *Data Hazard(R2), two cycles stall
+// 16:LW	R1, mem[R0+6]	// load 18 
+// 17:EXEC  15	            // jump to R15(15)                     //EXEC, target instruction doesn't change PC
+//     *Control Hazard(EXEC), one cycle stall, flush instruction previously fetched.
+// 18:JR    R2	            // jump to 20
+//    *Control Hazard(JR), one cycle stall, flush instruction previously fetched.
+// 19:ADD   R3, R3, R2      // this instruction will not execute
+// 20:EXEC  R1              // jump to 18                          //EXEC, target instruction changes PC
+//    *Control Hazard(EXEC), one cycle stall, flush instruction previously fetched.
+// 21:LW    R3, mem[R0+8]   // load mem[8] to R3                   
+// 22:SW    R3, mem[R0+9]   // store R3 to mem[9]                  //MEM to MEM forwarding(WB_MEM_Fwd)
+// 23:LHB   R1, 7           // test LHB instruction                //LHB
+// 24:LLB   R2, 28          // test LLB instruction                //LLB
+// 25:SLL   R3, R2, 2       // test logic instruction              //Logic, ALU to ALU forwarding(MEM_EX_Fwd)
+//    *data hazard(R2), one cycle stall
+// 26:JR    R2              // jump to 28                          //JR, ALU to Branch forwarding(MEM_ID_Fwd)
+//    *Control Hazard(JR), one cycle stall, flush instruction previously fetched.
+//
+//
+// Machine code in 16-bit Hex
+8404
+8505
+8100
+8201
+0312
+9202
+9303
+8102
+8203
+0312
+9202
+9303
+1445
+C1F9
+d001
+8207
+8106
+ff00
+e200
+0322
+f100
+8308
+9309
+a107
+b21c
+4322
+e200

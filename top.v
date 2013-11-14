@@ -19,7 +19,7 @@ wire [2:0]ID_op;
 wire ID_DMWen, ID_RFWen, ID_WDataSc2;
 wire [1:0] ID_WDataSc1;
 
-wire MEM_ID_Fwd, WB_ID_Fwd;
+wire MEM_ID_Fwd;
 
 wire [`RSIZE-1:0]ID_RAddr1, ID_RAddr2; 
 wire [`DSIZE-1:0]ID_RData1, ID_RData2; 
@@ -80,8 +80,7 @@ wire [`DSIZE-1:0]WB_SrcData, WB_WData;
 wire WB_RFWen, WB_WDataSc2; 
 
 //IF stage
-assign PC_JREXE = (WB_ID_Fwd)? WB_WData : 
-                 ((MEM_ID_Fwd)? MEM_SrcData : ID_RData2);
+assign PC_JREXE = (MEM_ID_Fwd)? MEM_SrcData : ID_RData2;
 assign PC_EXEBack = EX_PCnext;
 assign BranJAL = TakeBran | JAL;
   //select the address of the next fetched instruction
@@ -136,9 +135,9 @@ ControlUnit CU(.opCode(opCode), .EXE_pre(MEM_EXE),
                .DMWen(ID_DMWen), .WDataSc1(ID_WDataSc1), .WDataSc2(ID_WDataSc2),
                .RFWen(ID_RFWen));
 
-JR_hz_fwUnit HFU(.ID_RAddr2(ID_RAddr2), .EX_WAddr(EX_WAddr), .MEM_WAddr(MEM_WAddr), .WB_WAddr(WB_WAddr),
-              .JR(JR), .EX_RFWen(EX_RFWen), .MEM_RFWen(MEM_RFWen), .WB_RFWen(WB_RFWen), .MEM_WDataSc2(MEM_WDataSc2),
-              .MEM_ID_Fwd(MEM_ID_Fwd), .WB_ID_Fwd(WB_ID_Fwd), .stall(stall_JR));
+JR_hz_fwUnit HFU(.ID_RAddr2(ID_RAddr2), .EX_WAddr(EX_WAddr), .MEM_WAddr(MEM_WAddr),
+              .JR(JR), .EX_RFWen(EX_RFWen), .MEM_RFWen(MEM_RFWen), .MEM_WDataSc2(MEM_WDataSc2),
+              .MEM_ID_Fwd(MEM_ID_Fwd), .stall(stall_JR));
                
 HazardDetectionUnit HDU(.opCode(opCode), .RAddr1(ID_RAddr1), .RAddr2(ID_RAddr2), .EX_WAddr(EX_WAddr),
                         .EX_WDataSc2(EX_WDataSc2), .EX_RFWen(EX_RFWen),

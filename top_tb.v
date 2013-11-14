@@ -13,7 +13,7 @@ initial
 #5 rst = 1;
 #10 rst = 0;
     
-#1000 $finish;
+#4000 $finish;
   end
   
 endmodule
